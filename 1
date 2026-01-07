@@ -1,0 +1,109 @@
+site/
+│── index.html
+│── cv-europass.pdf
+│── style.css
+│── images/
+│    ├── poza1.jpg
+│    └── poza2.jpg
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Site personal – Nume Prenume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Nume Prenume</h1>
+    <nav>
+        <a href="#despre">Despre</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="despre">
+    <h2>Despre mine</h2>
+    <p>Acesta este un website personal realizat de Nume Prenume.</p>
+</section>
+
+<section id="galerie">
+    <h2>Galerie</h2>
+
+    <img src="images/poza1.jpg" alt="Imagine 1">
+    <p>Sursă: <a href="https://unsplash.com" target="_blank">Unsplash</a></p>
+
+    <img src="images/poza2.jpg" alt="Imagine 2">
+    <p>Sursă: <a href="https://pexels.com" target="_blank">Pexels</a></p>
+</section>
+
+<section id="cv">
+    <h2>CV Europass</h2>
+    <a href="cv-europass.pdf" download>Descarcă CV-ul meu (Europass)</a>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form action="mailto:emailul_tau@gmail.com" method="post" enctype="text/plain">
+        <label>Nume:</label><br>
+        <input type="text" name="nume"><br><br>
+
+        <label>Mesaj:</label><br>
+        <textarea name="mesaj"></textarea><br><br>
+
+        <button type="submit">Trimite</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Nume Prenume</p>
+
+    <!-- 4 link-uri externe -->
+    <a href="https://google.com" target="_blank">Google</a>
+    <a href="https://wikipedia.org" target="_blank">Wikipedia</a>
+    <a href="https://europa.eu" target="_blank">Europa.eu</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+</footer>
+
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+img {
+    width: 250px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
